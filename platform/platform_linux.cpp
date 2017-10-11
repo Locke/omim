@@ -175,6 +175,11 @@ Platform::Platform()
       m_resourcesDir = path;
       m_writableDir = writableDir != nullptr ? writableDir : DefaultWritableDir();
     }
+    else
+    {
+      m_resourcesDir = path;
+      m_writableDir = DefaultWritableDir();
+    }
   }
   m_resourcesDir += '/';
   m_settingsDir += '/';
